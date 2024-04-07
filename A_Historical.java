@@ -1,0 +1,20 @@
+package apitest;
+
+public abstract class A_Historical {
+	protected A_Mediator mediator;
+	protected String name;
+	public A_Historical(A_Mediator med, String name){
+		this.mediator=med;
+		this.name=name;
+	
+	}
+	
+	public abstract void send(String msg,Object data);
+	
+	public abstract void receive(String msg);
+	
+	public abstract void reqHistorical();
+	
+	public abstract Object getData();
+	public abstract Object getTableData();
+}
